@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://www.bitstorm.org/jquery/color-animation/archive/jquery.animate-colors-min.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+<div class="wrapper">   
+    <div id="carousel_container">
+        <!-- <div id="left_scroll" class="jcarousel-prev arrow left-arrow">
+            <a title="Arrow" href="#"></a>
+        </div> -->
+        <div id="carousel_inner">
+            <div id="carousel_hidden">
+                <ul id="carousel_ul">
+                    <li data-id="1">
+                        <div class="player-container">
+                            <div class="video-thumbnail">
+                                <span class="play play-btn" data-video="0">Play</span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li data-id="2">
+                        <div class="player-container">
+                            <div class="video-thumbnail">
+                                <span class="play play-btn" data-video="1">Play</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-id="3">
+                        <div class="player-container">
+                            <div class="video-thumbnail">
+                                <span class="play play-btn" data-video="2">Play</span>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="video-wrapper">
+                    <div class="video-content">
+                        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+                        <div id="player"></div>
+                    </div>
+                    <div class="play-pause">
+                        <span class="play">Play</span>
+                    </div>
+                    <div class="controller">
+                        <span id="title">&nbsp;</span>
+                        <span id="counter">(01/03)</span>
+                        <span id="current_time">0:00</span>
+                        <div id="seek_wrapper">
+                            <span id="customSeek"></span>
+                        </div>
+                        <span id="total_time">&nbsp;</span>
+
+                        <span id="full-screen">Full-Screen</span>
+
+                        <div id="volume-control">
+                            <span data-value="0" class="active" >&nbsp;</span>
+                            <span data-value="10" class="transparent">&nbsp;</span>
+                            <span data-value="20" class="active" >&nbsp;</span>
+                            <span data-value="30" class="transparent">&nbsp;</span>
+                            <span data-value="40" class="active" >&nbsp;</span>
+                            <span data-value="50" class="transparent">&nbsp;</span>
+                            <span data-value="60" class="active" >&nbsp;</span>
+                            <span data-value="70" class="transparent">&nbsp;</span>
+                            <span data-value="80" class="active" >&nbsp;</span>
+                            <span data-value="90" class="transparent">&nbsp;</span>
+                            <span data-value="100" class="active" >&nbsp;</span>
+                        </div>
+                        <span id="cinema_mode"><p>Cinema mode</p></span>
+
+                        <input type="hidden" id="orgVal" data-val="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="right_scroll" class="jcarousel-next arrow right-arrow">
+            <a title="Arrow" href="#"></a>
+        </div> -->
+    </div>
+</div>
+</body>
+</html>
